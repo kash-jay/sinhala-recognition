@@ -50,7 +50,7 @@ function ImageUpload() {
 
       console.log(...formData);
 
-      fetch('http://127.0.0.1:5000/uploads', {
+      fetch('https://sinhala-recognition.onrender.com/uploads', {
           method: 'POST',
           body: formData,
       })

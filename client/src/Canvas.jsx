@@ -48,7 +48,7 @@ const Canvas = () => {
         canvas.toBlob(blob => {
             const formData = new FormData();
             formData.append('image', blob, 'canvas-image.png');
-            fetch('http://127.0.0.1:5000/uploads', {
+            fetch('https://sinhala-recognition.onrender.com/uploads', {
                 method: 'POST',
                 body: formData,
             })
